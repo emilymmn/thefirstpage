@@ -72,6 +72,13 @@
     opacity: 0.85;
   }
 
+
+/* ===== landing ===== */
+.landing {
+  justify-content: center;
+}
+
+
 /* ===== Posts ===== */
 .post-list {
   display: grid;
@@ -109,6 +116,15 @@
   margin: 0 0 8px;
 }
 
-.landing {
-  justify-content: center;
+/* ===== Scroll Animation ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
